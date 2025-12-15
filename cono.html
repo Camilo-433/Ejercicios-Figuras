@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cono</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body class="bg-white">
+    <header class="text-white text-center py-4 mt-5">
+        <h1 class="fw-bold">Ejercicio funciones</h1>
+        <p class="mb-0">Cálculo de áreas de figuras planas</p>
+    </header>
+
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top shadow-lg py-2">
+        <div class="container-fluid">
+            <a href="index_2.html" class="btn btn-primary me-2">Fig_Sólidas</a>
+            <a href="index.html" class="btn btn-primary">Fig_Planas</a>
+
+            <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#menu"
+                aria-controls="menu" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="menu">
+                <ul class="navbar-nav ms-auto text-center mb-2 mb-lg-0">
+                    <ul class="navbar-nav ms-auto text-center mb-2 mb-lg-0">
+                    <li class="nav-item mx-1"><a class="btn btn-light" href="cubo.html">Cubo</a></li>
+                    <li class="nav-item mx-1"><a class="btn btn-light" href="paralelepipedo.html">Paralelepipedo</a></li>
+                    <li class="nav-item mx-1"><a class="btn btn-light" href="cilindro.html">Cilindro</a></li>
+                    <li class="nav-item mx-1"><a class="btn btn-light" href="esfera.html">Esfera</a></li>
+                    <li class="nav-item mx-1"><a class="btn btn-light" href="cono.html">Cono</a></li>
+                </ul>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <main class="container py-5">
+
+        <section class="bg-secondary p-4 rounded shadow-sm">
+
+            <h2 class="text-center mb-4">Volumen del Cono</h2>
+
+            <figure class="text-center py-3">
+                <img src="assets/image/Cono.png" class="img-fluid rounded shadow-lg" style="max-width:200px;" alt="Cono">
+            </figure>
+
+            <label for="radioCono" class="form-label fw-semibold">Radio (r)</label>
+            <input type="number" id="radioCono" class="form-control mb-3" placeholder="" step="any">
+
+            <label for="alturaCono" class="form-label fw-semibold">Altura (h)</label>
+            <input type="number" id="alturaCono" class="form-control mb-3" placeholder="" step="any">
+
+            <button onclick="volumenCono()" class="btn btn-success w-100 mb-3">Calcular</button>
+            <p id="resCono" class="alert alert-info text-center">Resultado</p>
+
+        </section>
+    </main>
+
+    <aside></aside>
+
+    <footer class="bg-dark text-white text-center py-3">
+        <p class="mb-0">© 2025 - Figuras Sólidas</p>
+    </footer>
+
+    <script text="text/javascript" src="assets/js/bootstrap.bundle.min.js"></script>
+    <script text="text/javascript" src="assets/js/figuras.solidas.js"></script>
+</body>
+
+</html>
